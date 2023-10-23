@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="landscape"
+    tools:context=".AllMembersActivity">
+
+    <TextView
+        android:id="@+id/tvAllMembers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All members!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="813dp"
+        android:layout_height="558dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="1dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAllMembers">
+
+        <ListView
+            android:id="@+id/listViewMembers"
+            android:layout_width="800dp"
+            android:layout_height="450dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvAllMembers" />
+
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="300dp"
+            android:layout_height="54dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:text="Home" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

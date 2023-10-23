@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/black_background"
+    tools:context=".NewMemberActivity">
+
+    <TextView
+        android:id="@+id/tvCheckIn_Out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Membership"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.085" />
+
+    <TextView
+        android:id="@+id/tvFirstName"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="520dp"
+        android:layout_marginTop="16dp"
+        android:text="First Name"
+        android:textColor="@color/white"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCheckIn_Out" />
+
+    <TextView
+        android:id="@+id/tvCity"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="520dp"
+        android:layout_marginTop="16dp"
+        android:text="City"
+        android:textColor="@color/white"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAddress" />
+
+    <TextView
+        android:id="@+id/tvBarcode"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="520dp"
+        android:layout_marginTop="16dp"
+        android:text="Code (Barcode)"
+        android:textColor="@color/white"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCity" />
+
+    <TextView
+        android:id="@+id/tvDateOfBirth"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="520dp"
+        android:layout_marginTop="16dp"
+        android:text="Date of Birth"
+        android:textColor="@color/white"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etFirstName" />
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="520dp"
+        android:layout_marginTop="16dp"
+        android:text="Address"
+        android:textColor="@color/white"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDateOfBirth" />
+
+    <TextView
+        android:id="@+id/tvFirstName2"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="16dp"
+        android:text="Last Name"
+        android:textColor="@color/white"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tvFirstName"
+        app:layout_constraintTop_toBottomOf="@+id/tvCheckIn_Out" />
+
+    <TextView
+        android:id="@+id/tvAge"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="16dp"
+        android:text="Age"
+        android:textColor="@color/white"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tvDateOfBirth"
+        app:layout_constraintTop_toBottomOf="@+id/etLastName" />
+
+    <TextView
+        android:id="@+id/tvProvince"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="16dp"
+        android:text="Province"
+        android:textColor="@color/white"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tvCity"
+        app:layout_constraintTop_toBottomOf="@+id/etAddress" />
+
+    <EditText
+        android:id="@+id/etFirstName"
+        android:layout_width="280dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="520dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFirstName" />
+
+    <EditText
+        android:id="@+id/etLastName"
+        android:layout_width="280dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@+id/etFirstName"
+        app:layout_constraintTop_toBottomOf="@+id/tvFirstName2" />
+
+    <EditText
+        android:id="@+id/etDateOfBirth"
+        android:layout_width="280dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="520dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:background="@color/white"
+        android:hint="yyyy/mm/dd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDateOfBirth" />
+
+    <EditText
+        android:id="@+id/etCity"
+        android:layout_width="280dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="520dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCity" />
+
+    <EditText
+        android:id="@+id/etBarcode"
+        android:layout_width="280dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="520dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBarcode" />
+
+    <EditText
+        android:id="@+id/etAddress"
+        android:layout_width="630dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="520dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddress" />
+
+    <EditText
+        android:id="@+id/etAge"
+        android:layout_width="280dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/etDateOfBirth"
+        app:layout_constraintTop_toBottomOf="@+id/tvAge" />
+
+    <EditText
+        android:id="@+id/etProvince"
+        android:layout_width="280dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@+id/etCity"
+        app:layout_constraintTop_toBottomOf="@+id/tvProvince" />
+
+    <Button
+        android:id="@+id/btnTakeCode"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="44dp"
+        android:text="Take Code"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/etBarcode"
+        app:layout_constraintTop_toBottomOf="@+id/etProvince" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="520dp"
+        android:layout_marginTop="24dp"
+        android:text="Register"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etBarcode" />
+
+    <Button
+        android:id="@+id/btnTakePicture"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="24dp"
+        android:text="Take picture"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etBarcode" />
+
+    <ImageView
+        android:id="@+id/ivPicture"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/blank_avatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCheckIn_Out"
+        tools:srcCompat="@tools:sample/avatars" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

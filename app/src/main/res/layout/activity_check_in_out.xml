@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".CheckInOut">
+
+    <ImageView
+        android:id="@+id/ivPictureCheckInOut"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/blank_avatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCheckIn_Out"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvCheckIn_Out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check In/Out"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.085" />
+
+    <TextView
+        android:id="@+id/tvDOBCheckIn_Out"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="450dp"
+        android:layout_marginTop="64dp"
+        android:textColor="@color/white"
+        android:textSize="34dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFirstNameCheckIn_Out" />
+
+    <TextView
+        android:id="@+id/tvCodeCheckIn_Out"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="450dp"
+        android:layout_marginTop="64dp"
+        android:textColor="@color/white"
+        android:textSize="34dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDOBCheckIn_Out" />
+
+    <TextView
+        android:id="@+id/tvVisitsCheckIn_Out"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="34dp"
+        app:layout_constraintStart_toEndOf="@+id/tvCodeCheckIn_Out"
+        app:layout_constraintTop_toBottomOf="@+id/tvDOBCheckIn_Out" />
+
+    <TextView
+        android:id="@+id/tvAgeCheckIn_Out"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="34dp"
+        app:layout_constraintStart_toEndOf="@+id/tvDOBCheckIn_Out"
+        app:layout_constraintTop_toBottomOf="@+id/tvFirstNameCheckIn_Out" />
+
+    <TextView
+        android:id="@+id/tvFirstNameCheckIn_Out"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="450dp"
+        android:layout_marginTop="64dp"
+        android:textColor="@color/white"
+        android:textSize="34dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCheckIn_Out" />
+
+    <TextView
+        android:id="@+id/tvLastNameCheckIn_Out"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="34dp"
+        app:layout_constraintStart_toEndOf="@+id/tvDOBCheckIn_Out"
+        app:layout_constraintTop_toBottomOf="@+id/tvCheckIn_Out" />
+
+    <Button
+        android:id="@+id/btnCheckInOut_CheckInOut"
+        android:layout_width="343dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="550dp"
+        android:layout_marginTop="100dp"
+        android:text="Check In/Out"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCodeCheckIn_Out" />
+
+    <TextView
+        android:id="@+id/tvFirstNameCheckInOut"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="450dp"
+        android:gravity="left"
+        android:text="First Name"
+        android:textColor="#33ccff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvFirstNameCheckIn_Out"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDOBCheckInOut"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="450dp"
+        android:gravity="left"
+        android:text="Date of birth"
+        android:textColor="#33ccff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvDOBCheckIn_Out"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDOBCheckInOut2"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:gravity="left"
+        android:text="Age"
+        android:textColor="#33ccff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvDOBCheckIn_Out"
+        app:layout_constraintStart_toEndOf="@+id/tvDOBCheckInOut" />
+
+    <TextView
+        android:id="@+id/tvCodeCheckInOut"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="450dp"
+        android:gravity="left"
+        android:text="Code"
+        android:textColor="#33ccff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvCodeCheckIn_Out"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvVisitsCheckInOut"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:gravity="left"
+        android:text="Number of visits"
+        android:textColor="#33ccff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvCodeCheckIn_Out"
+        app:layout_constraintStart_toEndOf="@+id/tvCodeCheckInOut" />
+
+    <TextView
+        android:id="@+id/tvLastNameCheckInOut"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:gravity="left"
+        android:text="First Name"
+        android:textColor="#33ccff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvFirstNameCheckIn_Out"
+        app:layout_constraintStart_toEndOf="@+id/tvFirstNameCheckInOut" />
+</androidx.constraintlayout.widget.ConstraintLayout>
